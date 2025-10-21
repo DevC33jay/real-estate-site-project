@@ -15,14 +15,16 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className={`section py-20 ${isVisible ? 'slide-in visible' : 'slide-in'}`}>
-      <div className="container grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 className="text-4xl font-bold mb-6">About Elite Realty</h2>
-          <p className="text-lg mb-4">With over 20 years in the industry, we specialize in luxury homes and investment properties. Our team is dedicated to finding the perfect match for your lifestyle.</p>
-          <p className="text-lg">Explore our portfolio and let us guide you home.</p>
+    <section id="about" className={`about-section ${isVisible ? 'slide-in visible' : 'slide-in'}`}>
+      <div className="container">
+        <div className="about-grid"> {/* Renamed for clarity; styles target .about-grid now */}
+          <div>
+            <h2 className="text-4xl font-bold mb-6">About Elite Realty</h2>
+            <p className="text-lg mb-4">With over 20 years in the industry, we specialize in luxury homes and investment properties. Our team is dedicated to finding the perfect match for your lifestyle.</p>
+            <p className="text-lg">Explore our portfolio and let us guide you home.</p>
+          </div>
+          <img src="TODO: Insert about image URL" alt="About Us" className="about-image" />
         </div>
-        <img src="TODO: Insert about image URL" alt="About Us" className="rounded-lg shadow-lg" />
       </div>
     </section>
   );

@@ -22,18 +22,18 @@ const Properties = () => {
   }, [properties.length]);
 
   return (
-    <section id="properties" className="py-20 bg-gray-50">
+    <section id="properties" className="properties-section">
       <div className="container">
         <h2 className="text-4xl font-bold text-center mb-12">Featured Properties</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="properties-grid">
           {properties.slice(0, visibleCount).map((prop) => (
-            <div key={prop.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover-scale">
+            <div key={prop.id} className="property-card hover-scale">
               <img src={prop.img} alt={prop.title} className="w-full h-48 object-cover" />
-              <div className="p-6">
+              <div className="card-content">
                 <h3 className="text-xl font-semibold mb-2">{prop.title}</h3>
-                <p className="text-blue-600 font-bold text-lg">{prop.price}</p>
+                <p className="price text-lg">{prop.price}</p>
                 <button className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition-colors">
-                  // TODO: Insert link to details page
+                  {/* TODO: Insert link to details page */}
                   View Details
                 </button>
               </div>
@@ -41,11 +41,6 @@ const Properties = () => {
           ))}
         </div>
       </div>
-      <style jsx>{`
-        @media (max-width: 768px) {
-          .grid { grid-template-columns: 1fr; }
-        }
-      `}</style>
     </section>
   );
 };
