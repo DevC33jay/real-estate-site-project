@@ -26,7 +26,8 @@ const About = () => {
           <p className="text-lg mb-4">With over 20 years in the industry, we specialize in luxury homes and investment properties. Our team is dedicated to finding the perfect match for your lifestyle.</p>
           <p className="text-lg">Explore our portfolio and let us guide you home.</p>
         </div>
-        <img src="TODO: Insert about image URL" alt="About Us" className="about-image ${isVisible ? 'about-slide-from-right visible' : 'about-slide-from-right'}" />
+        <img src="https://images.freeimages.com/variants/ndM52Ty42exdbF9CVd4n2LDb/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d?fmt=webp&w=500" alt="About Us" 
+        className="about-image ${isVisible ? 'about-slide-from-right visible' : 'about-slide-from-right'}" />
       </div>
     </div>
   </section>

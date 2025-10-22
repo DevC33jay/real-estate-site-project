@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 const Properties = () => {
   const [properties] = useState([
-    { id: 1, title: 'Luxury Villa', price: '$1,200,000', img: 'TODO: Insert property 1 image URL' },
-    { id: 2, title: 'Modern Apartment', price: '$750,000', img: 'TODO: Insert property 2 image URL' },
-    { id: 3, title: 'Cozy Cottage', price: '$450,000', img: 'TODO: Insert property 3 image URL' },
-    { id: 4, title: 'Beachfront Home', price: '$2,500,000', img: 'TODO: Insert property 4 image URL' },
+    { id: 1, title: 'Luxury Villa', price: '$1,200,000', img: 'https://images.freeimages.com/images/large-previews/013/casapueblo-uruguay-2-1523911.jpg?fmt=webp&w=500' },
+    { id: 2, title: 'Modern Apartment', price: '$750,000', img: 'https://images.freeimages.com/images/large-previews/8bb/modern-swedish-architecture-5-1056775.jpg?fmt=webp&w=500' },
+    { id: 3, title: 'Cozy Cottage', price: '$350,000', img: 'https://media.istockphoto.com/id/2181328272/photo/country-kitchen-interior.webp?b=1&s=612x612&w=0&k=20&c=RJ8YmsYMWhQTKCe3yP0JJe1eZTsfqJDbosr7OileDXo=' },
+    { id: 4, title: 'Beachfront Home', price: '$2,500,000', img: 'https://media.istockphoto.com/id/2205315214/photo/beachfront-condominium-with-ocean-backdrop.webp?b=1&s=612x612&w=0&k=20&c=0X_a9D7iMsk8GU8YEwngjA9SGvy57E3HPsxQhNRvUN8=' },
   ]);
-
+  
   const [visibleProperties, setVisibleProperties] = useState([]); // Changed to track individual visibility
 
   useEffect(() => {

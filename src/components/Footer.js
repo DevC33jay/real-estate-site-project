@@ -7,10 +7,9 @@ const Footer = () => {
         <p>&copy; 2025 Elite Realty. All rights reserved.</p>
         <div className="social-links">
           {/* TODO: Insert social links */}
-         <a href="TODO: Insert Facebook link">Twitter</a>
-         <a href="TODO: Insert Facebook link">Twitter</a>
-         <a href="TODO: Insert Facebook link">Facebook</a>
-         <a href="TODO: Insert Instagram link">Instagram</a>
+          <a href="TODO: Insert Twitter link">Twitter</a>
+          <a href="TODO: Insert Facebook link">Facebook</a>
+          <a href="TODO: Insert Instagram link">Instagram</a>
         </div>
       </div>
     </footer>

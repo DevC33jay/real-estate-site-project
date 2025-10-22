@@ -386,14 +386,18 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
-  background-image: url('TODO: Insert hero background image URL here');
-  background-size: cover;
+  background-image: url('https://images.freeimages.com/images/large-previews/358/hearst-castle-1216546.jpg?fmt=webp&w=500');
+  background-size: cover; 
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative; /* For overlay if needed */
-}
+  image-rendering: crisp-edges; /* Firefox/others: Prevents smoothing */
+  -webkit-backface-visibility: hidden; /* Reduces subpixel rendering blur */
+  backface-visibility: hidden;
+  }
 
 .hero::before {
   content: '';
@@ -402,7 +406,7 @@ header.scrolled {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
   z-index: 1;
 }
 
@@ -424,6 +428,11 @@ header.scrolled {
   margin-bottom: 2rem;
 }
 
+.hero h1,
+.hero p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black glow for readability */
+}
+
 .hero button {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -438,6 +447,7 @@ header.scrolled {
 .hero button:hover {
   background-color: var(--color-secondary);
 }
+
 
 /* Properties Section */
 .properties-section {
@@ -511,6 +521,12 @@ header.scrolled {
 
   .hero h1 {
     font-size: 4.5rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-size: cover; /* Re-enable cover but at double-res */
   }
 }
 
